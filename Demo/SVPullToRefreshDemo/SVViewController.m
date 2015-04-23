@@ -33,9 +33,26 @@
     [self.tableView addInfiniteScrollingWithActionHandler:^{
         [weakSelf insertRowAtBottom];
     }];
+    
+    UILabel *labelStop = [[UILabel alloc] initWithFrame:CGRectMake(0.f, 0.f, 200.f, 30.f)];
+    labelStop.text = @"stoped";
+    labelStop.textAlignment = NSTextAlignmentCenter;
+    [self.tableView.infiniteScrollingView setCustomView:labelStop forState:SVInfiniteScrollingStateStopped];
+    
+    UILabel *labelTriggered = [[UILabel alloc] initWithFrame:CGRectMake(0.f, 0.f, 200.f, 30.f)];
+    labelTriggered.text = @"Triggered";
+    labelTriggered.textAlignment = NSTextAlignmentCenter;
+    [self.tableView.infiniteScrollingView setCustomView:labelTriggered forState:SVInfiniteScrollingStateTriggered];
+    
+    UILabel *labelLoading = [[UILabel alloc] initWithFrame:CGRectMake(0.f, 0.f, 200.f, 30.f)];
+    labelLoading.text = @"Loading...";
+    labelLoading.textAlignment = NSTextAlignmentCenter;
+    [self.tableView.infiniteScrollingView setCustomView:labelLoading forState:SVInfiniteScrollingStateLoading];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
     [tableView triggerPullToRefresh];
 }
 
