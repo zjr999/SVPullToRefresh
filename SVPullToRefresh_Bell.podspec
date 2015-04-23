@@ -21,6 +21,6 @@ Pod::Spec.new do |s|
 
   s.frameworks   = 'QuartzCore'
   s.source_files = 'SVPullToRefresh/*.{h,m}'
-  s.preserve_paths  = 'Demo'
+  #s.preserve_paths  = 'Demo'
   s.requires_arc = true
 end
