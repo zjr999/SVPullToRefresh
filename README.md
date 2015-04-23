@@ -1,3 +1,12 @@
+# comment
+
+This is forked form https://github.com/samvermette/SVPullToRefresh. it modify the SVInfiniteScrolling,change it's state to SVInfiniteScrollingStateTriggered when drig to show all SVInfiniteScrolling.
+
+### From CocoaPods
+
+the new cocoapods address is 'pod 'SVPullToRefresh_Bell'.
+
+
 # SVPullToRefresh + SVInfiniteScrolling
 
 These UIScrollView categories makes it super easy to add pull-to-refresh and infinite scrolling fonctionalities to any UIScrollView (or any of its subclass). Instead of relying on delegates and/or subclassing `UIViewController`, SVPullToRefresh uses the Objective-C runtime to add the following 3 methods to `UIScrollView`:
