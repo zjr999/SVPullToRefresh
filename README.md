@@ -4,7 +4,7 @@ This is forked form https://github.com/samvermette/SVPullToRefresh. it modify th
 
 ### From CocoaPods
 
-the new cocoapods address is 'pod 'SVPullToRefresh_Bell'.
+the new cocoapods address is pod 'SVPullToRefresh_Bell'.
 
 
 # SVPullToRefresh + SVInfiniteScrolling
