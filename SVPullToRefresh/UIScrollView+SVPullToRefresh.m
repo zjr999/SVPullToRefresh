@@ -102,6 +102,11 @@ static char UIScrollViewPullToRefreshView;
     [self.pullToRefreshView startAnimating];
 }
 
+- (void)noTriggerPullToRefresh {
+    self.pullToRefreshView.state = SVPullToRefreshStateTriggered;
+    self.pullToRefreshView.state = SVPullToRefreshStateLoading;
+}
+
 - (void)setPullToRefreshView:(SVPullToRefreshView *)pullToRefreshView {
     [self willChangeValueForKey:@"SVPullToRefreshView"];
     objc_setAssociatedObject(self, &UIScrollViewPullToRefreshView,
